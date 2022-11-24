@@ -3,6 +3,10 @@ import java.awt.Font;
 import javax.swing.JButton;
 
 public class Cell extends JButton {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private int x;
 	private int y;
 	
@@ -21,5 +25,9 @@ public class Cell extends JButton {
 		this.setFont(new Font("굴림", Font.BOLD, (size / 5)));
 		this.setVisible(true);
 		this.addActionListener(new ButtonListener());
+	}
+	
+	public void pushed() {
+		
 	}
 }

@@ -1,4 +1,8 @@
 public class Land extends Cell {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 6943989172698493448L;
 	private int mineCount = 0;
 	Cell[] surround;
 	
@@ -23,6 +27,9 @@ public class Land extends Cell {
 				System.out.println("Land Cell");
 			}
 		}
+	}
+	
+	public void pushed() {
 		this.setText(String.valueOf(this.mineCount));
 	}
 }
