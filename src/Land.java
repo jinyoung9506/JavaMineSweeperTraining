@@ -7,8 +7,9 @@ public class Land extends Cell {
 	Cell[] surround;
 	
 	public Land(int x, int y, int size) {
-		super(x, y, size);
+		super(x, y, size, "Land");
 		// TODO Auto-generated constructor stub
+		//this.addActionListener(new LandListener());
 	}
 
 	@Override

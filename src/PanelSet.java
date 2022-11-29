@@ -14,14 +14,11 @@ public class PanelSet {
 				if (((Math.random() * 100) % 10 ) <= 3 ) {
 					cell[i][j] = new Mine(i, j, size);
 					panel.add(cell[i][j]);
+					//cell[i][j].addActionListener(new MineListener());
 				} else {
 					cell[i][j] = new Land(i, j, size);
 					panel.add(cell[i][j], BorderLayout.CENTER);
-					try {
-						
-					} catch (Exception e) {
-						// TODO: handle exception
-					}
+					//cell[i][j].addActionListener(new LandListener());
 				}
 			}
 		}

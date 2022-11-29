@@ -4,9 +4,25 @@ import java.awt.*;
 public class MineMain {
 
 	public static void main(String[] args) throws Exception {
+		int row = 0;
+		int col = 0;
+		
 		// TODO Auto-generated method stub
-		int row = Integer.parseInt(JOptionPane.showInputDialog("가로(자연수) 입력.")); 
-		int col = Integer.parseInt(JOptionPane.showInputDialog("세로(자연수) 입력."));
+		try {
+			row = Integer.parseInt(JOptionPane.showInputDialog("가로(자연수) 입력."));
+		} catch (NumberFormatException e) {
+			row = 1;
+			// TODO: handle exception
+		}
+		
+		// TODO Auto-generated method stub
+		try {
+			col = Integer.parseInt(JOptionPane.showInputDialog("세로(자연수) 입력."));
+		} catch (NumberFormatException e) {
+			col = 1;
+			// TODO: handle exception
+		}
+		
 		int size = 100;
 		
 		JFrame frame = new JFrame("MineSweeperTest");

@@ -3,12 +3,14 @@ import java.awt.event.ActionListener;
 
 import javax.swing.JButton;
 
-public class ButtonListener implements ActionListener {
-	
+public class MineListener implements ActionListener {
+
 	@Override
 	public void actionPerformed(ActionEvent e) {
 		// TODO Auto-generated method stub
 		JButton button = (JButton)e.getSource();
-		button.setVisible(false);
+		button.setOpaque(false);
+		//button.setVisible(false);
 	}
+
 }
